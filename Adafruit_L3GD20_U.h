@@ -104,6 +104,7 @@ class Adafruit_L3GD20_Unified : public Adafruit_Sensor
     void enableAutoRange ( bool enabled );
     bool getEvent        ( sensors_event_t* );
     void getSensor       ( sensor_t* );
+    int get_temperature();  // gets temperature data
 
     gyroRawData_t raw; /* Raw values from last sensor read */
 
